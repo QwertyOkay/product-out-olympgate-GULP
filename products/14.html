@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.min.css ">
+  <link rel="stylesheet" href="../css/style.min.css ">
+
+  <title>Campania International Mia Statue</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="../index.html" class="header__logo">
+            <img src="../img/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="single section--offset">
+        <div class="container">
+          <div class="single__row">
+            <div class="single__image">
+              <img src="../img/14.jpg" alt="">
+            </div>
+            <div class="single__info">
+              <h3 class="statues__title">Campania International Mia Statue</h3>
+              <div class="statues__price">
+                <span class="statues__price--new">
+                  &#8364; 139.99
+                </span>
+                <span class="statues__price--old">
+                  &#8364; 229.99
+                </span>
+              </div>
+              <form action="" class="single__form" id="order-form">
+                <input type="email" placeholder="E-mail" required>
+                <button class="single__btn btn-reset">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li>
+            <a href="../terms.html" class="footer__link">Terms &amp; Conditions</a>
+          </li>
+          <li>
+            <a href="../privacy.html" class="footer__link">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="footer-copy">
+          &copy; 2023, Olympgate
+        </p>
+      </div>
+    </footer>
+    <div class="btn-up btn-up_hide"></div>
+
+    <div class="popup">
+      <div class="popup__dialog">
+        <div class="popup__content">
+          <button class="popup__close">&times;</button>
+          <h4 class="popup__title">Thank you for your interest.</h4>
+          <p class="popup__subtitle"> We will contact you soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/app.min.js"></script>
+  <script>
+    /*-------------------- START VALIDATION----------------------*/
+    function falidator(item) {
+      check = true;
+      $(item).find('input').each(function () {
+        if ($(this).hasClass('required') && $(this).val() == '') {
+          check = false;
+        } else { }
+      });
+      if (check) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    /*-------------------- END VALIDATION----------------------*/
+
+
+    $("#contact-form").submit(function () {
+      if (!falidator(this)) return false;
+      $.ajax({
+        type: "POST",
+        url: "contact.php",
+        data: $("#contact-form").serialize(),
+        success: function (html) { }
+      });
+      $('.popup').fadeIn();
+      $('#contact-form').trigger("reset");
+      return false;
+    });
+    /*------------close popup----------*/
+    $('.popup__close').on('click', function () {
+      $('.popup').fadeOut();
+    })
+    $(document).mouseup(function (e) {
+      var popup = $('.popup__content');
+      if (e.target != popup[0] && popup.has(e.target).length === 0) {
+        $('.popup').fadeOut();
+      }
+    });
+  </script>
+</body>
+
+</html>
