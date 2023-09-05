@@ -505,22 +505,23 @@ body.lock {
   flex-wrap: wrap;
   gap: 20px;
 }
-.item {
+
+.itemFooter {
   position: relative;
   flex-basis: 23%;
   //   border-bottom: 1px solid #666;
   //   padding-bottom: 20px;
 }
-.item .bestsellers-link {
+.itemFooter .bestsellers-link {
   width: 150px;
 }
 @media (max-width: 900px) {
-  .item {
+  .itemFooter {
     flex-basis: 31%;
   }
 }
 @media (max-width: 768px) {
-  .item {
+  .itemFooter {
     flex-basis: 27%;
   }
   .modal-content {
@@ -551,7 +552,7 @@ body.lock {
   }
 }
 
-.item {
+.itemFooter {
   //   flex-basis: 100%;
   display: flex;
   justify-content: center;

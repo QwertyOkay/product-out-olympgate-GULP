@@ -1,19 +1,23 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css";
 .footer {
   padding: 5px 0 0;
   background-color: var(--primary-color);
   background-color: #1da8b5;
-  border-top: 2px solid rgb(102 102 102 / 23%);
+  border-top: 2px solid rgba(102, 102, 102, 0.23);
 }
+
 .footer__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .footer__list li {
   position: relative;
   padding: 0 10px;
 }
+
 .footer__list li:not(:last-child)::before {
   content: "";
   position: absolute;
@@ -24,14 +28,16 @@
   background-color: var(--color-white);
   transform: translateY(-50%);
 }
+
 .footer__link {
-  font-size: calc(16px + 2 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 2 * (100vw - 320px) / 960);
   position: relative;
   padding-bottom: 5px;
   font-weight: 500;
   color: var(--color-white);
   text-transform: capitalize;
 }
+
 .footer__link::before {
   content: "";
   position: absolute;
@@ -44,27 +50,28 @@
   transform: scale(0);
   transition: 0.3s ease-in-out;
 }
+
 .footer__link:hover::before {
   transform: scale(1);
 }
+
 .footer__copy {
   padding: 15px;
   color: var(--color-white);
   text-align: center;
   text-transform: capitalize;
-  //   background-color: #8c311f;
 }
 
 .top {
   max-width: 1200px;
   display: flex;
-  // flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 10px;
   padding: 10px;
   flex-wrap: wrap-reverse;
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .top {
     margin: 0 auto;
     gap: 20px;
     flex-wrap: nowrap;
@@ -74,12 +81,12 @@
 .itemFooter {
   position: relative;
   flex-basis: 23%;
-  //   border-bottom: 1px solid #666;
-  //   padding-bottom: 20px;
 }
+
 .itemFooter .bestsellers-link {
   width: 150px;
 }
+
 @media (max-width: 900px) {
   .itemFooter {
     flex-basis: 31%;
@@ -94,7 +101,6 @@
     margin: 20% auto;
   }
 }
-
 .titleFooter {
   text-decoration: underline;
 }
@@ -114,15 +120,14 @@
   color: var(--color-primary);
   cursor: pointer;
   height: 30px;
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .iconFooter {
     color: var(--color-white);
   }
-
-  &:hover,
-  &:focus {
-    color: var(--color-gray);
-  }
+}
+.iconFooter:hover, .iconFooter:focus {
+  color: var(--color-gray);
 }
 
 .iconList__socials {
@@ -142,7 +147,7 @@ p {
 }
 
 footer p:hover {
-  color: #00000093;
+  color: rgba(0, 0, 0, 0.5764705882);
 }
 
 .footer__copy {
@@ -150,5 +155,4 @@ footer p:hover {
   color: var(--color-white);
   text-align: center;
   text-transform: capitalize;
-  //   background-color: #8c311f;
-}
+}/*# sourceMappingURL=style.css.map */
