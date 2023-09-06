@@ -1,9 +1,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css";
 .footer {
   padding: 5px 0 0;
-  background-color: var(--primary-color);
-  background-color: #1da8b5;
-  border-top: 2px solid rgba(102, 102, 102, 0.23);
+  border-top: 2px solid rgba(127, 127, 127, 0.63);
 }
 
 .footer__list {
@@ -59,7 +57,6 @@
   padding: 15px;
   color: var(--color-white);
   text-align: center;
-  text-transform: capitalize;
 }
 
 .top {
@@ -157,9 +154,9 @@ footer p:hover {
 
 .footer__copy {
   padding: 15px;
-  color: var(--color-white);
+  color: rgba(0, 0, 0, 0.6509803922);
   text-align: center;
-  text-transform: capitalize;
+  letter-spacing: 1.3px;
 }
 
 .header__body {
@@ -167,4 +164,26 @@ footer p:hover {
   justify-content: center;
   align-items: center;
   gap: 55px;
+}
+@media screen and (min-width: 1200px) {
+  .header__body {
+    gap: 120px;
+  }
+}
+
+.header__body > a {
+  color: #002723;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header {
+  border-bottom: 2px solid #3f626e;
+}
+
+.hero__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
 }/*# sourceMappingURL=style.css.map */

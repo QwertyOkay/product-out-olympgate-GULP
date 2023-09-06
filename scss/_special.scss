@@ -1,8 +1,8 @@
 .footer {
   padding: 5px 0 0;
-  background-color: var(--primary-color);
-  background-color: #1da8b5;
-  border-top: 2px solid rgb(102 102 102 / 23%);
+  //   background-color: var(--primary-color);
+  //   background-color: #1da8b5;
+  border-top: 2px solid rgb(127 127 127 / 63%);
 }
 .footer__list {
   display: flex;
@@ -51,7 +51,7 @@
   padding: 15px;
   color: var(--color-white);
   text-align: center;
-  text-transform: capitalize;
+  //   text-transform: capitalize;
   //   background-color: #8c311f;
 }
 
@@ -154,9 +154,10 @@ footer p:hover {
 
 .footer__copy {
   padding: 15px;
-  color: var(--color-white);
+  color: #000000a6;
   text-align: center;
-  text-transform: capitalize;
+  //   text-transform: capitalize;
+  letter-spacing: 1.3px;
   //   background-color: #8c311f;
 }
 
@@ -170,4 +171,25 @@ footer p:hover {
   justify-content: center;
   align-items: center;
   gap: 55px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 120px;
+  }
+}
+
+.header__body > a {
+  color: #002723;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header {
+  border-bottom: 2px solid #3f626e;
+}
+
+.hero__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
 }
