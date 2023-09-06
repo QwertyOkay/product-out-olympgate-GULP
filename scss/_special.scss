@@ -146,6 +146,7 @@ p {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  line-height: 1.4;
 }
 
 footer p:hover {
@@ -165,6 +166,8 @@ footer p:hover {
 // footer a {
 //   color: #fff !important;
 // }
+
+// -----------------
 
 .header__body {
   display: flex;
@@ -192,4 +195,26 @@ footer p:hover {
   justify-content: center;
   align-items: center;
   margin: 0px auto;
+}
+
+.card__stars {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.cards-wrapper {
+  padding: 17px;
+}
+
+.section__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section__link {
+  margin: 0 auto;
 }
