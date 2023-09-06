@@ -209,4 +209,20 @@ footer p:hover {
 
 .section__link {
   margin: 0 auto;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  color: #000;
+  font-weight: 300;
+}
+
+.h3Text {
+  text-align: center;
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */
