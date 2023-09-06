@@ -344,7 +344,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
   transform: translate(-50%, -50%) scale(1);
   width: 90%;
   height: 65px;
-  padding: 15px 15px 0px 15px;
+  padding: 15px;
   background-color: var(--main-title-color);
   opacity: 1;
   border-radius: 6px;
@@ -361,7 +361,7 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
-    height: 65px;
+    height: 80px;
   }
 }
 
@@ -1081,4 +1081,30 @@ $overlay-card-color: rgba(33, 150, 243, 0.9);
 .modal4__terms {
   color: #fff;
   font-size: 1.5em;
+}
+
+.button__modal1 {
+  justify-content: center;
+  display: flex;
+  left: -11px;
+  align-items: center;
+  top: -11px;
+  position: absolute;
+  min-width: 30px;
+  padding: 0;
+  background-color: #3f626e;
+  border-radius: 50%;
+  color: #000;
+  min-height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-duration: 250ms;
+  cursor: pointer;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon__close3 {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
 }
