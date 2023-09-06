@@ -74,6 +74,13 @@
 .itemFooter {
   position: relative;
   flex-basis: 23%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
   //   border-bottom: 1px solid #666;
   //   padding-bottom: 20px;
 }
@@ -151,4 +158,16 @@ footer p:hover {
   text-align: center;
   text-transform: capitalize;
   //   background-color: #8c311f;
+}
+
+// footer h2,
+// footer a {
+//   color: #fff !important;
+// }
+
+.header__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
 }

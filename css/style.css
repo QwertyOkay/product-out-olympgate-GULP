@@ -81,6 +81,11 @@
 .itemFooter {
   position: relative;
   flex-basis: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .itemFooter .bestsellers-link {
@@ -155,4 +160,11 @@ footer p:hover {
   color: var(--color-white);
   text-align: center;
   text-transform: capitalize;
+}
+
+.header__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
 }/*# sourceMappingURL=style.css.map */
